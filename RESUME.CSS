@@ -7,7 +7,7 @@
 }
 :root{
     --primary-color :#ff7613;
-    --text-size: #727171;
+    --text-color: #727171;
 }
 html{
     font-size: 10px;
@@ -18,12 +18,110 @@ body{
     background-color: black;
     color: white;
 }
+
+/* common styles*/
 img{
     width: 100%;
-
 }
 
 a{
     text-decoration: none;
     color: white;
+}
+.profile_description{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+
+
+}
+.title{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+/* layout */
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: #070707;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+.profile {
+    grid-column: auto;
+    margin-bottom: 2rem;
+}
+
+/* profile */
+.profile_container{
+    display: flex;
+    gap: 2rem;
+}
+.profile_image{
+    width: 450px;
+}
+.firstname{
+    color: white;
+    font-weight: 200;
+    font-size: clamp(2rem, 8vw, 4rem);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -0.8rem;
+}
+
+.lastname{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: clamp(2.5rem, 15vw, 7rem);
+    text-transform: uppercase;
+    display: block;
+
+}
+.profile_title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.downloadbtn{
+    display: block;
+    text-decoration: underline;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+.downloadbtn:hover{
+    color: var(--primary-color);
+}
+.circle-image {
+    width: 200px;      /* adjust size */
+    height: 200px;     /* make sure width = height */
+    border-radius: 50%; /* makes it a circle */
+    object-fit: cover;  /* keeps the image from stretching */
+}
+@media only screen and (max-width:768px) {
+    .profile_container{
+        flex-direction: column;
+
+    }
+    
+}
+
+/* skills */
+.skill_list{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
 }
