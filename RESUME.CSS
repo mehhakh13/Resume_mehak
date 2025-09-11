@@ -123,8 +123,21 @@ a{
     margin-left: 2rem;
     line-height: 2;
 }
+.skills{
+    margin-bottom: 2rem;
+}
+.edu_item1 h4{
+    font-weight: 600;
+    margin: 0.8rem 0;
+    color: white;
+    font-size: 1.6rem;
+}
 
-.edu_item h4{
+.edu_item1{
+    margin-bottom: 2.5rem;
+}
+
+.edu_item2 h4{
     font-weight: 600;
     margin: 0.8rem 0;
     color: white;
@@ -140,13 +153,19 @@ a{
 
 .profile {
     grid-column: 1 / -1;  /* makes profile span across both columns */
-  }
+}
   
-  .left {
+.left {
     grid-column: 1;       /* left column */
-  }
+}
   
-  .right {
+.right {
     grid-column: 2;       /* right column */
-  }
-  
+}
+
+.bottom {
+    grid-column: 1 / -1;   /* span full width across both columns */
+    margin-top: 2rem;      /* space above it */
+    text-align: center;    /* optional: center text inside */
+}
+    
