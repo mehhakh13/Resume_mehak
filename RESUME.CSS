@@ -178,3 +178,16 @@ a{
     gap: 2rem;
 
 }
+.int_item{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+
+}
+.int_item svg{
+    width: 2rem;
+}
