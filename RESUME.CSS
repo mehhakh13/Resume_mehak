@@ -33,8 +33,6 @@ a{
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--text-color);
-
-
 }
 .title{
     color: var(--primary-color);
@@ -125,3 +123,30 @@ a{
     margin-left: 2rem;
     line-height: 2;
 }
+
+.edu_item h4{
+    font-weight: 600;
+    margin: 0.8rem 0;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.exp_item h4{
+    font-weight: 600;
+    margin: 0.8rem 0;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.profile {
+    grid-column: 1 / -1;  /* makes profile span across both columns */
+  }
+  
+  .left {
+    grid-column: 1;       /* left column */
+  }
+  
+  .right {
+    grid-column: 2;       /* right column */
+  }
+  
