@@ -46,6 +46,12 @@ a{
     color: white;
     font-size: 1.6rem;
 }
+.skill_list li:hover {
+    color: var(--primary-color);
+    font-weight: bold;
+    cursor: default;
+  }
+  
 
 /* layout */
 .container{
@@ -191,3 +197,66 @@ a{
 .int_item svg{
     width: 2rem;
 }
+
+
+h1, h2, h3, .title {
+    font-family: 'Roboto', sans-serif;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+/* CONTACTS?   */
+
+.linkedin-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.5rem;
+  color: #0a66c2;
+  font-weight: bold;
+}
+.linkedin-link:hover {
+  text-decoration: underline;
+}
+.linkedin-icon {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* .downloadbtn */
+
+.downloadbtn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-weight: 600;
+  }
+  .downloadbtn:hover {
+    background: var(--primary-color);
+    color: black;
+}
+  
+/* interest design */
+
+.int_item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .int_item:hover {
+    background-color: var(--primary-color); /* gold highlight */
+    color: black; /* make text readable */
+    transform: scale(1.05); /* slight zoom effect */
+    cursor: pointer;
+  }
+  
+  .int_item:hover i {
+    color: black; /* icon turns black on hover */
+  }
+  
