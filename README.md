@@ -5,15 +5,6 @@ It showcases my education, skills, and projects in a structured, visually appeal
 
 ---
 
-
-## 🌐 Live Demo
-
-You can view the live resume here:  
-[View Resume](https://yourusername.github.io/Resume_mehak/)  
-*(Replace with your GitHub Pages link if hosted.)*
-
----
-
 ## 📝 Features
 
 - Clean and professional layout
@@ -28,6 +19,5 @@ You can view the live resume here:
 
 ---
 
-## 📂 Project Structure
 
 
