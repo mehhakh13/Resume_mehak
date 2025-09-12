@@ -315,4 +315,39 @@ h1, h2, h3, .title {
 
 
 
+.skill_list {
+    list-style-type: disc; /* or none for custom bullets */
+    padding-left: 2rem;
+    margin-top: 0.5rem;
+    line-height: 1.8;
+  }
+  
+  .skill_list li {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-bottom: 0.4rem;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .skill_list li:hover {
+    color: var(--primary-color);
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
   
