@@ -205,6 +205,43 @@ h1, h2, h3, .title {
   body {
     font-family: 'Inter', sans-serif;
   }
+
+
+  /* footer÷ */
+.footer {
+    grid-column: 1 / -1;   /* span full width */
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--text-color);
+    text-align: center;
+  }
+  
+  .footer_left {
+    margin-bottom: 1rem;
+  }
+  
+  .contact_info a {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact_info a:hover {
+    color: var(--primary-color);
+    transform: translateX(5px);
+  }
+  
+  .footer_bottom {
+    margin-top: 1.5rem;
+  }
+  
+  .footer_bottom p {
+    font-size: 1.3rem;
+    color: var(--text-color);
+  }
+  
 /* CONTACTS?   */
 
 .linkedin-link {
@@ -247,16 +284,35 @@ h1, h2, h3, .title {
     padding: 6px 10px;
     border-radius: 8px;
     transition: all 0.3s ease;
-  }
+}
   
-  .int_item:hover {
+.int_item:hover {
     background-color: var(--primary-color); /* gold highlight */
     color: black; /* make text readable */
     transform: scale(1.05); /* slight zoom effect */
     cursor: pointer;
-  }
+}
   
-  .int_item:hover i {
+.int_item:hover i {
     color: black; /* icon turns black on hover */
-  }
+}
+
+  /* git */
+
+.btm_l a {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+}
+  
+.btm_l a:hover {
+    color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+
+
+
   
