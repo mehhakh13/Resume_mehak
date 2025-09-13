@@ -336,6 +336,95 @@ h1, h2, h3, .title {
   }
   
 
+/* Mobile Responsive */
+@media only screen and (max-width: 768px) {
+
+    /* Container */
+    .container {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        gap: 4rem;
+    }
+
+    /* Profile section */
+    .profile_container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile_image {
+        width: 200px; /* smaller image on mobile */
+    }
+
+    .circle-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .firstname {
+        font-size: clamp(2rem, 10vw, 3rem);
+        margin-bottom: 0.5rem;
+    }
+
+    .lastname {
+        font-size: clamp(2.5rem, 12vw, 4rem);
+    }
+
+    .profile_title {
+        font-size: 1.4rem;
+    }
+
+    .profile_description {
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
+
+    .downloadbtn {
+        font-size: 1.4rem;
+        padding: 0.5rem 1rem;
+    }
+
+    /* Left & Right columns */
+    .left, .right {
+        grid-column: 1;
+    }
+
+    /* Skills */
+    .skill_list {
+        padding-left: 1.5rem;
+    }
+
+    .skill_list li {
+        font-size: 1.3rem;
+    }
+
+    /* Projects */
+    .pro_items p, .pro_items h4 {
+        font-size: 1.4rem;
+    }
+
+    /* Footer */
+    .footer {
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .footer_left, .footer_bottom {
+        text-align: center;
+    }
+
+    /* Interests */
+    .int_items {
+        justify-content: center;
+    }
+
+    .int_item {
+        font-size: 1.3rem;
+        padding: 5px 8px;
+        gap: 5px;
+    }
+}
 
   
 
