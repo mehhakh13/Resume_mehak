@@ -154,7 +154,7 @@ nav ul li a:hover {
 }
 .downloadbtn{
     display: block;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-size: 1.6rem;
     margin-top: 1rem;
 }
