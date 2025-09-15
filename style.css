@@ -19,7 +19,7 @@ body{
     color: white;
 }
 
-/* common styles*/
+/* ------------common styles--------------------*/
 img{
     width: 100%;
 }
@@ -98,35 +98,70 @@ nav ul li a:hover {
     font-size: 1.4rem;
   }
 }
-/* layout */
-.container{
+
+
+
+/* -------------layout--------------------- */
+
+header{
     max-width: 1000px;
     width: 90%;
     margin: 0 auto;
-    display: grid;
+    /* display: grid; */
     padding: 5rem;
     background: #070707;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
     gap: 4rem;
 }
 @media only screen and (max-width: 768px) {
-    .container{
+    header{
         width: 100%;
         grid-template-columns: 1fr;
         padding: 3rem;
         gap: 7rem;
     }
 }
+
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* left and right columns */
+    gap: 4rem;  /* spacing between columns */
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr; /* stack columns on mobile */
+        padding: 3rem 1rem;
+        gap: 3rem;
+    }
+}
+
+
+
 .profile {
     grid-column: auto;
     margin-bottom: 2rem;
 }
 
 /* profile */
-.profile_container{
+.profile_container {
     display: flex;
     gap: 2rem;
+    align-items: center;
+    justify-content: center; /* centers horizontally */
 }
+@media only screen and (max-width: 768px) {
+    .profile_container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 .profile_image{
     width: 450px;
 }
@@ -162,10 +197,12 @@ nav ul li a:hover {
     color: var(--primary-color);
 }
 .circle-image {
-    width: 200px;      /* adjust size */
-    height: 200px;     /* make sure width = height */
-    border-radius: 50%; /* makes it a circle */
-    object-fit: cover;  /* keeps the image from stretching */
+    width: 300px;     
+    height: 300px;     
+    border-radius: 50%; 
+    object-fit: cover;  
+   
+
 }
 @media only screen and (max-width:768px) {
     .profile_container{
@@ -191,25 +228,6 @@ nav ul li a:hover {
 }
 
 
-/* layout */
-
-.profile {
-    grid-column: 1 / -1;  /* makes profile span across both columns */
-}
-  
-.left {
-    grid-column: 1;       /* left column */
-}
-  
-.right {
-    grid-column: 2;       /* right column */
-}
-
-.bottom {
-    grid-column: 1 / -1;   /* span full width across both columns */
-    margin-top: 2rem;      /* space above it */
-    text-align: center;    /* optional: center text inside */
-}
 
 /* projects */
 .projects{
@@ -219,7 +237,9 @@ nav ul li a:hover {
 .pro_items{
     margin-bottom: 2.5rem;
 }
-/* interests */
+
+
+/* -------------interests------------------ */
 
 .int_items{
     margin-top: 2rem;
@@ -252,42 +272,76 @@ h1, h2, h3, .title {
   }
 
 
-  /* footer÷ */
+/* -------------download-button------ */
+.downloadbtn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-weight: 600;
+  }
+  .downloadbtn:hover {
+    background: var(--primary-color);
+    color: black;
+}
+  
+
+
+
+
+  /* -----------------------footer÷ ------------------------------*/
+
+  
+
+
 .footer {
-    grid-column: 1 / -1;   /* span full width */
-    margin-top: 2rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--text-color);
-    text-align: center;
-  }
-  
-  .footer_left {
-    margin-bottom: 1rem;
-  }
-  
-  .contact_info a {
-    display: block;
-    margin-top: 0.5rem;
-    font-size: 1.5rem;
-    color: var(--text-color);
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .contact_info a:hover {
-    color: var(--primary-color);
-    transform: translateX(5px);
-  }
-  
-  .footer_bottom {
-    margin-top: 1.5rem;
-  }
-  
-  .footer_bottom p {
-    font-size: 1.3rem;
-    color: var(--text-color);
-  }
-  
-/* CONTACTS?   */
+  grid-column: 1 / -1;   /* full width */
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #444;
+  text-align: center;
+}
+
+.footer_left {
+  margin-bottom: 1rem;
+}
+
+.footer_left h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #ff9800;
+}
+
+.contact_info a {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #aaa; /* accessible gray */
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact_info a:hover {
+  color: #ff9800; /* highlight on hover */
+  transform: translateX(5px);
+}
+
+.footer_bottom {
+  margin-top: 1.5rem;
+}
+
+.footer_bottom p {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+
+
+
+
+
+
+/* --------------CONTACTS----------------------  */
 
 .linkedin-link {
   display: inline-flex;
@@ -306,21 +360,8 @@ h1, h2, h3, .title {
 }
 
 
-/* .downloadbtn */
 
-.downloadbtn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border: 2px solid var(--primary-color);
-    border-radius: 5px;
-    font-weight: 600;
-  }
-  .downloadbtn:hover {
-    background: var(--primary-color);
-    color: black;
-}
-  
-/* interest design */
+/* -------------------interest design---------------------- */
 
 .int_item {
     display: flex;
@@ -342,7 +383,7 @@ h1, h2, h3, .title {
     color: black; /* icon turns black on hover */
 }
 
-  /* git */
+/* -------------- git ------------ */
 
 .btm_l a {
     display: block;
@@ -356,8 +397,6 @@ h1, h2, h3, .title {
     color: var(--primary-color);
     transform: translateX(5px);
 }
-
-
 
 
 .skill_list {
@@ -381,7 +420,7 @@ h1, h2, h3, .title {
   }
   
 
-/* Mobile Responsive */
+/* ----------------Mobile Responsive --------------------------*/
 @media only screen and (max-width: 768px) {
 
     /* Container */
@@ -471,7 +510,6 @@ h1, h2, h3, .title {
     }
 }
 
-  
 
 
 
@@ -480,8 +518,3 @@ h1, h2, h3, .title {
 
 
 
-
-
-
-
-  
